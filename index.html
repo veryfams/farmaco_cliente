@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FarmaCo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img class="logo" src="assets/logo.png" alt="FarmaCo" />
+      <div class="brand-text">
+        <div class="title">FarmaCo</div>
+        <div class="subtitle">Cliente web (demo)</div>
+      </div>
+    </div>
+
+    <div class="env">
+      <span class="pill">Cloud: AWS</span>
+      <span class="pill pill-teal">Front: Vercel</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="card">
+      <div class="card-head">
+        <div>
+          <h1>Proceso del médico</h1>
+          <p class="muted">
+            Esta interfaz permite realizar acciones básicas del flujo (demo). No guarda datos, no autentica usuarios.
+          </p>
+        </div>
+
+        <div class="field">
+          <label>Base URL (AWS)</label>
+          <input id="baseUrl" type="text" />
+        </div>
+      </div>
+
+      <div class="steps" id="steps"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <div>
+          <h2>Estado</h2>
+          <p class="muted">Aquí se muestran respuestas del sistema.</p>
+        </div>
+        <button class="btn" id="clearLog">Limpiar</button>
+      </div>
+
+      <div class="status" id="statusBox">
+        Selecciona una acción para comenzar.
+      </div>
+
+      <div class="log" id="log"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span class="muted">FarmaCo – demo académica</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

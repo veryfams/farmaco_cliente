@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FarmaCo</title>
+  <title>FarmaCo | Cloud Client</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header class="topbar">
     <div class="brand">
       <img class="logo" src="assets/logo.png" alt="FarmaCo" />
       <div class="brand-text">
         <div class="title">FarmaCo</div>
-        <div class="subtitle">Cliente web (demo)</div>
+        <div class="subtitle">Cloud Client</div>
       </div>
     </div>
 
@@ -29,7 +30,7 @@
         <div>
           <h1>Proceso del médico</h1>
           <p class="muted">
-            Esta interfaz permite realizar acciones básicas del flujo (demo). No guarda datos, no autentica usuarios.
+            Interfaz web para ejecutar el flujo principal: emitir receta, buscar farmacias, consultar stock y procesar redención.
           </p>
         </div>
 
@@ -61,8 +62,21 @@
   </main>
 
   <footer class="footer">
-    <span class="muted">FarmaCo – demo académica</span>
+    <span class="muted">FarmaCo – Cloud Client</span>
+    <button class="link" id="aboutBtn" type="button">Acerca de</button>
   </footer>
+
+  <div class="modal" id="aboutModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-title">Acerca de FarmaCo</div>
+      <div class="modal-text">
+        Esta interfaz es un cliente web mínimo. Los servicios están desplegados en AWS y responden 202 + transactionId para representar asincronía y desacoplamiento.
+        <br><br>
+        Nota: proyecto académico basado en SoaML (enfoque en contratos).
+      </div>
+      <button class="btn btn-primary" id="closeAbout" type="button">Cerrar</button>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>

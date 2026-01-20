@@ -17,7 +17,7 @@ const STEPS = [
     method: "POST",
     path: "/prescriptions/emit",
     exampleBody: {
-      doctorName: "Dr. Juan Perez",
+      doctorName: "Dr. Ana Perez",
       doctorLicense: "MED-999",
       patientName: "Maria Lopez",
       patientIdentification: "0102030405",
